@@ -1,0 +1,45 @@
+.input-file {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 22;
+  left: 0;
+  top: 0;
+  width: 230px;
+  height: 70px;
+  display: block;
+}
+
+.input-label {
+  position: relative;
+  color: white;
+  font-size: 24px;
+  background: teal;
+  width: 200px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.download-btn {
+  cursor: default;
+  text-decoration: none;
+  margin-left: 20px;
+  position: relative;
+  color: white;
+  font-size: 24px;
+  background: rgba(23, 46, 46, 0.192);
+  width: 200px;
+  height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.download-btn-active {
+  background: teal;
+  color: white;
+}
