@@ -39,7 +39,7 @@
   padding: 10px 15px;
 }
 
-.download-btn-active {
+.download-btn.download-btn-active {
   cursor: pointer;
   background: teal;
   color: white;
