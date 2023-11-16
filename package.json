@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "@hawjeh/js-to-excel": "^1.0.10"
+    "@hawjeh/js-to-excel": "^1.0.10",
+    "cowsay": "^1.5.0"
   },
   "devDependencies": {
     "webpack": "^5.89.0",

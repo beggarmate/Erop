@@ -5,9 +5,9 @@ const container = document.querySelector(".container");
 const container2 = document.querySelector(".container2");
 
 let newFileName = "default";
-function init_with_name() {
-  exportHtmlToExcel(document.querySelector(".newTable"), {
-    name: `${newFileName}Recycled.xlsx`,
+function init_with_name(newTable) {
+  exportHtmlToExcel(newTable, {
+    name: `${newFileName} Обработанный.xlsx`,
     saveLocal: false,
     sheet: {
       name: "My Sheet 1",
@@ -121,10 +121,13 @@ inputFile.addEventListener("change", (event) => {
       <td>${deal["city"]}</td>
       </tr>`;
     });
-    container2.append(newTable);
+    // container2.append(newTable);
 
     outputAnchor.className = "download-btn download-btn-active";
-
+    outputAnchor.addEventListener("click", () => {
+      init_with_name(newTable);
+  });
+  
     console.log(deals);
     console.table(deals);
   });
@@ -141,8 +144,3 @@ import {
   getCity,
 } from "./fn.js";
 const outputAnchor = document.querySelector(".download-btn");
-outputAnchor.addEventListener("click", () => {
-  if (document.querySelector(".newTable")) {
-    init_with_name();
-  }
-});

@@ -1,3 +1,6 @@
+body, html{
+  height: 100%;
+}
 .input-file {
   opacity: 0;
   cursor: pointer;
@@ -9,12 +12,18 @@
   height: 70px;
   display: block;
 }
-
+.buttons{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
 .input-label {
   position: relative;
   color: white;
   font-size: 24px;
-  background: teal;
+  background: rgb(0, 200, 0);
+  border-radius: 10px;
   width: 200px;
   height: 50px;
   display: inline-flex;
@@ -30,7 +39,8 @@
   position: relative;
   color: white;
   font-size: 24px;
-  background: rgba(23, 46, 46, 0.192);
+  background: rgba(25, 25, 25, 0.250);
+  border-radius: 10px;
   width: 200px;
   height: 50px;
   display: inline-flex;
@@ -41,6 +51,5 @@
 
 .download-btn.download-btn-active {
   cursor: pointer;
-  background: teal;
-  color: white;
+  background: rgb(0, 200, 0);
 }
